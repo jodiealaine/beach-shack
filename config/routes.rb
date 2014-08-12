@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'pages#home'
 
+  #support stripe payments through charges
+  resources :charges
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
